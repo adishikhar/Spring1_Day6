@@ -10,24 +10,6 @@
     <param-value>My Web App</param-value>
   </context-param>
 
-<!--  <servlet>-->
-<!--    <servlet-name>CreateUserServlet</servlet-name>-->
-<!--    <servlet-class>com.nisum.CreateUserServlet</servlet-class>-->
-<!--    &lt;!&ndash;    <init-param>&ndash;&gt;-->
-<!--    &lt;!&ndash;      <param-name>username</param-name>&ndash;&gt;-->
-<!--    &lt;!&ndash;      <param-value>admin</param-value>&ndash;&gt;-->
-<!--    &lt;!&ndash;    </init-param>&ndash;&gt;-->
-<!--    &lt;!&ndash;    <init-param>&ndash;&gt;-->
-<!--    &lt;!&ndash;      <param-name>password</param-name>&ndash;&gt;-->
-<!--    &lt;!&ndash;      <param-value>secret123</param-value>&ndash;&gt;-->
-<!--    &lt;!&ndash;    </init-param>&ndash;&gt;-->
-<!--  </servlet>-->
-
-<!--  <servlet-mapping>-->
-<!--    <servlet-name>CreateUserServlet</servlet-name>-->
-<!--    <url-pattern>/create-user</url-pattern>-->
-<!--  </servlet-mapping>-->
-
 
   <!-- WelcomeDisplay servlet config -->
   <servlet>
