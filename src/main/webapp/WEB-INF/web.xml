@@ -1,0 +1,209 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+  <context-param>
+    <param-name>appTitle</param-name>
+    <param-value>My Web App</param-value>
+  </context-param>
+
+<!--  <servlet>-->
+<!--    <servlet-name>CreateUserServlet</servlet-name>-->
+<!--    <servlet-class>com.nisum.CreateUserServlet</servlet-class>-->
+<!--    &lt;!&ndash;    <init-param>&ndash;&gt;-->
+<!--    &lt;!&ndash;      <param-name>username</param-name>&ndash;&gt;-->
+<!--    &lt;!&ndash;      <param-value>admin</param-value>&ndash;&gt;-->
+<!--    &lt;!&ndash;    </init-param>&ndash;&gt;-->
+<!--    &lt;!&ndash;    <init-param>&ndash;&gt;-->
+<!--    &lt;!&ndash;      <param-name>password</param-name>&ndash;&gt;-->
+<!--    &lt;!&ndash;      <param-value>secret123</param-value>&ndash;&gt;-->
+<!--    &lt;!&ndash;    </init-param>&ndash;&gt;-->
+<!--  </servlet>-->
+
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>CreateUserServlet</servlet-name>-->
+<!--    <url-pattern>/create-user</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+
+  <!-- WelcomeDisplay servlet config -->
+  <servlet>
+    <servlet-name>WelcomeDisplay</servlet-name>
+    <servlet-class>com.nisum.WelcomeDisplay</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>WelcomeDisplay</servlet-name>
+    <url-pattern>/welcome</url-pattern>
+  </servlet-mapping>
+
+  <!-- DisplayUserServlet servlet config -->
+  <servlet>
+    <servlet-name>DisplayUserServlet</servlet-name>
+    <servlet-class>com.nisum.DisplayUserServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>DisplayUserServlet</servlet-name>
+    <url-pattern>/display-user</url-pattern>
+  </servlet-mapping>
+
+  <!-- GetPostServlet servlet config -->
+  <servlet>
+    <servlet-name>GetPostServlet</servlet-name>
+    <servlet-class>com.nisum.GetPostServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>GetPostServlet</servlet-name>
+    <url-pattern>/getpost</url-pattern>
+  </servlet-mapping>
+
+  <!-- DateTimeServlet servlet config -->
+  <servlet>
+    <servlet-name>DateTimeServlet</servlet-name>
+    <servlet-class>com.nisum.DateTimeServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>DateTimeServlet</servlet-name>
+    <url-pattern>/datetime</url-pattern>
+  </servlet-mapping>
+
+
+
+  <!-- CookieServlet servlet config -->
+  <servlet>
+    <servlet-name>CookieServlet</servlet-name>
+    <servlet-class>com.nisum.CookieServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>CookieServlet</servlet-name>
+    <url-pattern>/cookie</url-pattern>
+  </servlet-mapping>
+
+  <!-- ParamServlet servlet config -->
+  <servlet>
+    <servlet-name>ParamServlet</servlet-name>
+    <servlet-class>com.nisum.ParamServlet</servlet-class>
+    <init-param>
+      <param-name>adminEmail</param-name>
+      <param-value>aditya@gmail.com</param-value>
+    </init-param>
+    <init-param>
+      <param-name>supportPhone</param-name>
+      <param-value>9142601061</param-value>
+    </init-param>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ParamServlet</servlet-name>
+    <url-pattern>/params</url-pattern>
+  </servlet-mapping>
+
+
+  <!-- ContextParamServlet servlet config -->
+  <servlet>
+    <servlet-name>ContextParamServlet</servlet-name>
+    <servlet-class>com.nisum.ContextParamServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ContextParamServlet</servlet-name>
+    <url-pattern>/context-param</url-pattern>
+  </servlet-mapping>
+
+  <!-- LoginServlet servlet config -->
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.nisum.LoginServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+
+
+  <!-- RedirectServlet servlet config -->
+  <servlet>
+    <servlet-name>RedirectServlet</servlet-name>
+    <servlet-class>com.nisum.RedirectServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>RedirectServlet</servlet-name>
+    <url-pattern>/redirect</url-pattern>
+  </servlet-mapping>
+
+  <!-- FeedbackServlet servlet config -->
+  <servlet>
+    <servlet-name>FeedbackServlet</servlet-name>
+    <servlet-class>com.nisum.FeedbackServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>FeedbackServlet</servlet-name>
+    <url-pattern>/submit-feedback</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ViewFeedbackServlet</servlet-name>
+    <servlet-class>com.nisum.ViewFeedbackServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ViewFeedbackServlet</servlet-name>
+    <url-pattern>/view-feedback</url-pattern>
+  </servlet-mapping>
+
+
+  <!-- LoggingFilter config -->
+  <filter>
+    <filter-name>LoggingFilter</filter-name>
+    <filter-class>com.nisum.filter</filter-class>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>LoggingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  <!-- sendingServlet config -->
+  <servlet>
+    <servlet-name>sendingServlet</servlet-name>
+    <servlet-class>com.nisum.sendingServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>sendingServlet</servlet-name>
+    <url-pattern>/send</url-pattern>
+  </servlet-mapping>
+
+  <!-- TargetServlet config -->
+  <servlet>
+    <servlet-name>DestServlet</servlet-name>
+    <servlet-class>com.nisum.DestServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>DestServlet</servlet-name>
+    <url-pattern>/dest</url-pattern>
+  </servlet-mapping>
+
+  <!-- succ_err servlet config -->
+  <servlet>
+    <servlet-name>succ_err</servlet-name>
+    <servlet-class>com.nisum.succ_err</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>succ_err</servlet-name>
+    <url-pattern>/validate</url-pattern>
+  </servlet-mapping>
+
+</web-app>
